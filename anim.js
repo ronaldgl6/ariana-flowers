@@ -13,7 +13,7 @@ var lyricsData = [
   { text: "C:", time: 33 },
   { text: "♫  ♪  ♫  ♪", time: 36 },
   { text: "Que bonita canción ...", time: 40 },
-  { text: "♫ Y LA LUZ ENCUENTRO AL FIIIINNN ♫", time: 45 },
+  { text: "♫ Y LA LUZ ENCUENTRO AL FIIIINNN ♫", time: 46 },
   { text: "♫ SE ACLARÓ AQUELLA NIEBLA ♫", time: 50 },
   { text: "♫ Y LA LUZ ENCUENTRO AL FIIIINNN ♫", time: 55 },
   { text: "♫  ♪", time: 60 },
@@ -27,7 +27,7 @@ var lyricsData = [
   { text: "Pienso en nosotros <3", time: 93 },
   { text: "<3 <3 <3", time: 97 },
   { text: "Hay dias que recuerdo..", time: 100 },
-  { text: "Tiempos atrás, cuando no, hablábamos pensaba en..", time: 103 },
+  { text: "Tiempos atrás, cuando no hablábamos pensaba en..", time: 103 },
   { text: "si algún dia iba a encontrar, a alguien como tú", time: 107 },
   { text: "Tiempo aquel persiguiendo un sueño", time: 111 },
   { text: "Tiempo fue en la oscuridad...", time: 117 },
@@ -45,7 +45,7 @@ var lyricsData = [
   { text: "Ya cambió la vida entera", time: 172 },
   { text: "♭  ♩  ♫  ♭", time: 176 },
   { text: "Esta vez todo es diferente...", time: 179 },
-  { text: "♭  ♩ VEO EN TI LA LUZ ♫  ♭", time: 185 },
+  { text: "♭  ♩ VEO EN TI LA LUZ ♫  ♭", time: 187 },
   { text: "Te Quiero.", time: 208 },
 ];
 
