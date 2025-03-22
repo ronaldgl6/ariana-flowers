@@ -14,37 +14,39 @@ var lyricsData = [
   { text: "♫  ♪  ♫  ♪", time: 36 },
   { text: "Que bonita canción ...", time: 40 },
   { text: "♭  ♩  ♫  ♭", time: 44 },
-  { text: "♫ Y LA LUZ ENCUENTRO AL FIIIINNN ♫", time: 48 },
+  { text: "♫ Y LA LUZ ENCUENTRO AL FIIIINNN ♫", time: 45 },
   { text: "♫  ♪", time: 53 },
   { text: "♫  ♪", time: 60 },
   { text: "Espera un momento...", time: 65 },
-  { text: "Voy a contarte un secreto C:", time: 79 },
-  { text: "...", time: 84 },
-  { text: "Esta canción es nuestra canción ", time: 87 },
-  { text: "Cada vez que la escucho", time: 91 },
-  { text: "Pienso en nosotros <3", time: 95 },
-  { text: "<3 <3 <3", time: 98 },
+  { text: "Voy a contarte un secreto C:", time: 69 },
+  { text: "...", time: 73 },
+  { text: "Te acuerdas que me preguntastes sobre las músicas", time: 77 },
+  { text: "Las cuales me recuerdan a ti", time: 81 },
+  { text: "Esta canción es una de esas", time: 85 },
+  { text: "Cada vez que la escucho", time: 89 },
+  { text: "Pienso en nosotros <3", time: 93 },
+  { text: "<3 <3 <3", time: 97 },
   { text: "Hay dias que recuerdo..", time: 100 },
   { text: "Tiempos atrás, cuando no, hablábamos..", time: 103 },
-  { text: "Pensaba si algún dia iba a encontrar", time: 107 },
-  { text: "A esa personita especial en mi vida..", time: 111 },
-  { text: "Tiempo aquel persiguiendo un sueño", time: 115 },
-  { text: "Tiempo fue en la oscuridad...", time: 120 },
-  { text: "Tiempo que, no habia visto como...", time: 125 },
-  { text: "es la realidad", time: 129 },
-  { text: "Tú siempre luces como estrella", time: 133 },
-  { text: "Contigo aquí, todo es claridad", time: 139 },
-  { text: "Si conmigo estoy, es fácil ver", time: 143 },
-  { text: "Que contigo quiero estar...", time: 148 },
-  { text: "♫  ♪", time: 153 },
-  { text: "se aclaró aquella niebla", time: 157 },
-  { text: "♭  ♩  ♫  ♭", time: 161 },
-  { text: "Ahora el cielo es azul", time: 166 },
-  { text: "Es real brillando así..", time: 170 },
-  { text: "Ya cambió la vida entera", time: 175 },
-  { text: "♭  ♩  ♫  ♭", time: 182 },
-  { text: "Esta vez todo es diferente...", time: 183 },
-  { text: "♭  ♩ VEO EN TI LA LUZ ♫  ♭", time: 188 },
+  { text: "Pensaba en, si algún dia iba a encontrar..", time: 107 },
+  { text: "A esa personita especial en mi vida..", time: 110 },
+  { text: "Tiempo aquel persiguiendo un sueño", time: 112 },
+  { text: "Tiempo fue en la oscuridad...", time: 117 },
+  { text: "Tiempo que, no habia visto como...", time: 122 },
+  { text: "es la realidad", time: 126 },
+  { text: "Tú siempre luces como estrella", time: 130 },
+  { text: "Contigo aquí, todo es claridad", time: 136 },
+  { text: "Si conmigo estas, es fácil ver", time: 140 },
+  { text: "Que contigo quiero estar...", time: 145 },
+  { text: "♫  ♪", time: 150 },
+  { text: "se aclaró aquella niebla", time: 154 },
+  { text: "♭  ♩  ♫  ♭", time: 158 },
+  { text: "Ahora el cielo es azul", time: 163 },
+  { text: "Es real brillando así..", time: 167 },
+  { text: "Ya cambió la vida entera", time: 172 },
+  { text: "♭  ♩  ♫  ♭", time: 179 },
+  { text: "Esta vez todo es diferente...", time: 180 },
+  { text: "♭  ♩ VEO EN TI LA LUZ ♫  ♭", time: 185 },
   { text: "Te Quiero.", time: 208 },
 ];
 
@@ -72,15 +74,15 @@ var lyricsData = [
 function updateLyrics() {
   var time = Math.floor(audio.currentTime);
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 6
+    (line) => time >= line.time && time < line.time + 7
   );
 
   if (currentLine) {
     // Calcula la opacidad basada en el tiempo en la línea actual
-    var fadeInDuration = 0.2; // Duración del efecto de aparición en segundos
+    var fadeInDuration = 0.5; // Duración del efecto de aparición en segundos
     var fadeOutDuration = 0.5; // Duración del efecto de desaparición en segundos
     var timeSinceStart = time - currentLine.time;
-    var timeUntilEnd = currentLine.time + 6 - time;
+    var timeUntilEnd = currentLine.time + 7 - time;
 
     var opacity;
     if (timeSinceStart < fadeInDuration) {
